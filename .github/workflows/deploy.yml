@@ -22,5 +22,5 @@ jobs:
     - name: Deploy to netlify
       uses: netlify/action/cli@master
       env:
-        NETLIFY_AUTH_TOKEN: $${{ SECRETS.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_AUTH_TOKEN: $${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: $${{ secrets.DEV_NETLIFY_SITE_ID}}
